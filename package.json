@@ -1,0 +1,12 @@
+{
+    "name": "myarchive",
+    "version": "1.0.0",
+    "description": "",
+    "main": "content.js",
+    "scripts": {
+        "start": "web-ext run --target=chromium"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT"
+}

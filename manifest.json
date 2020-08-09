@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "webrequest-blocker",
+    "version": "1.0",
+    "description": "",
+    "icons": {
+        "512": "icons/blocker.png"
+    },
+    "background": {
+        "page": "index.html"
+    },
+    "content_scripts": [{
+        "all_frames": true,
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+    }],
+    "permissions": ["tabs", "<all_urls>", "contextMenus", "webRequest", "webRequestBlocking", "webNavigation"]
+}
