@@ -19,7 +19,12 @@ const block_patterns = [
     "agorov",
     "rec.imedi.ge",
     "googleads",
+    "googlesyndication",
     ".com/get_video_info",
+    "hentai",
+    "hanime",
+    "porn",
+    "adclick.",
 ];
 
 const check = (x, y) => {
@@ -35,7 +40,7 @@ const blockUrl = (url) => {
     }
 
     for (let item of block_patterns) {
-        if (url.indexOf(item) !== -1) {
+        if (check(item, url)) {
             return true;
         }
     }
