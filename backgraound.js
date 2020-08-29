@@ -21,6 +21,7 @@ const block_patterns = [
     "googleads",
     "googlesyndication",
     ".com/get_video_info",
+    ".com/get_midroll_info",
     "hentai",
     "hanime",
     "porn",
