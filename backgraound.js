@@ -12,6 +12,7 @@ const block_patterns = [
     "eskimi",
     "/ado",
     /^ado.*/,
+    "/ad_",
     "openx",
     "2mdnsys",
     "cpmstar",
@@ -22,10 +23,15 @@ const block_patterns = [
     "googlesyndication",
     ".com/get_video_info",
     ".com/get_midroll_info",
+    "preroll",
+    "protovid",
     "hentai",
     "hanime",
     "porn",
     "adclick.",
+    "doubleclick.",
+    "/ads.",
+    ".adfox.",
 ];
 
 const check = (x, y) => {
