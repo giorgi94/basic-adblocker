@@ -35,6 +35,7 @@ const block_patterns = [
     "doubleclick.",
     "/ads.",
     ".adfox.",
+    "syndicate",
 ];
 
 const check = (x, y) => {
