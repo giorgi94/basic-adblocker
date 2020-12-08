@@ -1,7 +1,7 @@
 const style = document.createElement("style");
 style.id = "mystyle";
 
-document.body.appendChild(style);
+document.head.appendChild(style);
 
 style.innerHTML = `
     .ytp-ad-image-overlay,

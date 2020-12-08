@@ -1,6 +1,9 @@
 const block_patterns = [
     "open5.myvideo.ge",
     "ankunding.biz",
+    "nogravitycdn",
+    ".agency",
+    "banner",
     "fcdn.net",
     "mc.yandex",
     "exoclick",
