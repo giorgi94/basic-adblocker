@@ -28,8 +28,6 @@ const block_patterns = [
     ".com/get_midroll_info",
     "preroll",
     "protovid",
-    "hentai",
-    "hanime",
     "porn",
     "adclick.",
     "doubleclick.",

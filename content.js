@@ -8,6 +8,11 @@ style.innerHTML = `
     .video-overlay-banner {
         display: none;
     }
+
+    .ytp-ce-covering-overlay:not(:hover),
+    .ytp-ce-element:not(:hover) {
+        opacity: 0.2!important
+    }
 `;
 
 if (window.location.host.endsWith("youtube.com")) {
