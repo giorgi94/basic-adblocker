@@ -34,6 +34,10 @@ const block_patterns = [
     "/ads.",
     ".adfox.",
     "syndicate",
+    "girlsdivine",
+    "exdynsrv",
+    "splash.php",
+    ".life",
 ];
 
 const check = (x, y) => {
