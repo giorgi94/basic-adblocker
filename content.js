@@ -1,19 +1,22 @@
-const style = document.createElement("style");
-style.id = "mystyle";
+if (document.head) {
+    const style = document.createElement("style");
 
-document.head.appendChild(style);
+    style.id = "mystyle";
 
-style.innerHTML = `
-    .ytp-ad-image-overlay,
-    .video-overlay-banner {
-        display: none;
-    }
+    document.head.appendChild(style);
 
-    .ytp-ce-covering-overlay:not(:hover),
-    .ytp-ce-element:not(:hover) {
-        opacity: 0.2!important
-    }
-`;
+    style.innerHTML = `
+        .ytp-ad-image-overlay,
+        .video-overlay-banner {
+            display: none;
+        }
+
+        .ytp-ce-covering-overlay:not(:hover),
+        .ytp-ce-element:not(:hover) {
+            opacity: 0.2!important
+        }
+    `;
+}
 
 function getElementByXpath(path) {
     return document.evaluate(
