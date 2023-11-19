@@ -38,6 +38,8 @@ const block_patterns = [
     "exdynsrv",
     "splash.php",
     ".life",
+    ".cummerata.",
+    "v.strosin.biz",
 ];
 
 const check = (x, y) => {
