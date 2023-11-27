@@ -40,6 +40,7 @@ const block_patterns = [
     ".life",
     ".cummerata.",
     "v.strosin.biz",
+    "franecki."
 ];
 
 const check = (x, y) => {
