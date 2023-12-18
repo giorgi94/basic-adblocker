@@ -15,7 +15,28 @@ if (document.head) {
         .ytp-ce-element:not(:hover) {
             opacity: 0.2!important
         }
+    
     `;
+}
+
+
+function hideFBConversations(names) {
+
+    if(names.length == 0) {
+        return
+    }
+
+    const style = document.querySelector("style#mystyle");
+
+    let selector = names.map((name) => {
+        return `[aria-label*="conversation with " i][aria-label*="${name}" i]`;
+    }).join(",");
+
+    style.innerHTML += `
+            ${selector} {
+                display: none;
+            }
+        `;
 }
 
 function getElementByXpath(path) {
@@ -52,4 +73,21 @@ if (window.location.host.endsWith("youtube.com")) {
         el.id = "popup_chat";
         el.style.display = "none";
     }
+
+
+    const hide_names_key = "fb-hide-names"
+
+    // chrome.storage.local.set({"fb-hide-names": JSON.stringify(["john doe"])},()=>{console.log("data set")})
+
+    chrome.storage.local.get([hide_names_key], function(result) {
+        names = JSON.parse(result[hide_names_key]);
+
+        if (Array.isArray(names)) {
+            hideFBConversations(names)
+        }
+    
+    });
+
+    
+
 }

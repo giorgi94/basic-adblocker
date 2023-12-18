@@ -23,6 +23,7 @@
         "contextMenus",
         "webRequest",
         "webRequestBlocking",
-        "webNavigation"
+        "webNavigation",
+        "storage"
     ]
 }
